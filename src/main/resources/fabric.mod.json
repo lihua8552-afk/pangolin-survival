@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "pangolinsurvival",
+  "version": "${version}",
+  "name": "Pangolin Survival",
+  "description": "A Fabric survival RPG mod that replaces normal mining with pangolin-style burrowing, digging, stamina management, and helmet-tier progression.",
+  "authors": [
+    "AiannoToke"
+  ],
+  "contact": {
+    "qq": "2401742586"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.aiannotoke.pangolinsurvival.PangolinSurvivalMod"
+    ],
+    "client": [
+      "com.aiannotoke.pangolinsurvival.client.PangolinSurvivalClient"
+    ]
+  },
+  "mixins": [
+    "pangolinsurvival.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": ">=${fabric_api_min_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21"
+  }
+}
